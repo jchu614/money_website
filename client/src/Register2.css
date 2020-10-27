@@ -1,0 +1,14 @@
+.Register2 h3 {
+	font-size: 35px;
+	margin-bottom: 30px;
+	letter-spacing: .3em;
+}
+
+.Register2 input {
+	margin-bottom: 15px;
+}
+
+.Register2 label {
+	margin: 15px 0;
+	font-size: 24px;
+}

@@ -1,0 +1,14 @@
+.App1 {
+	background-image: url('./assets/bgimg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 750px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+	color: #97BC62FF;
+	letter-spacing: .35em;
+}

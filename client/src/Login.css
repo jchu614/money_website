@@ -1,0 +1,28 @@
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #97BC62FF;
+	text-align: center;
+	letter-spacing: .1em;
+}
+
+.input-box input {
+	font-size: 25px;
+}
+
+.Login h1 {
+	font-size: 35px;
+	margin-bottom: 30px;
+	letter-spacing: .3em;
+}
+
+.Login input {
+	margin-bottom: 15px;
+}
+
+.Login label {
+	margin: 15px 0;
+	font-size: 24px;
+}

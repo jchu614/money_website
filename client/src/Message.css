@@ -1,0 +1,24 @@
+.default {
+	margin-top: 25px;
+	display: flex;
+	width: 50%;
+	height: 50px;	
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	opacity: .65;
+	letter-spacing: .2em;
+	font-weight: 700;
+}
+
+.good {
+	background-color: #88C586;
+	border: 3px solid #0F3E20;
+	color: #25573F;
+}
+
+.bad {
+	background-color: #DE0B0B;
+	border: 3px solid #440606;
+	color: #440606;
+}

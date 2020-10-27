@@ -1,0 +1,23 @@
+/* APP AND HEADER STYLING */
+
+
+.App h1 {
+	color: #97BC62FF;
+	font-size: 35px;
+	text-align: center;
+	letter-spacing: .1em;
+}
+
+.App h2 {
+	color: #97BC62FF;
+	font-size: 75px;
+	text-align: center;
+	margin: 0;
+	letter-spacing: .35em;
+	font-weight: 400;
+}
+
+
+.settings-btn {
+	margin-top: 115px;
+}
