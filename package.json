@@ -8,6 +8,9 @@
     "start": "node app.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
+  "engines": {
+	  "node": "10.16.3"
+  },
   "author": "Jason Chu",
   "license": "ISC",
   "dependencies": {
