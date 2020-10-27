@@ -9,6 +9,10 @@ const path = require('path');
 app.use(cookieParser());
 app.use(express.json());
 
+app.use('/', express.static(path.join(__dirname, '../client/build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
 
 //REQUIRED ROUTES
 const moneyRoutes = require("./routes/moneyroute");
@@ -26,8 +30,7 @@ app.get('/', function(req, res){
 app.use('/api/money', moneyRoutes);
 app.use('/api/account', userRoutes);
 
-app.use(express.static(path.join(__dirname, 'build')));
-app.use('*', express.static(path.join(__dirname, "client", "build")))
+// app.use(express.static(path.join(__dirname, 'build')));
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname + 'build', 'index.html'));
 // });
@@ -39,6 +42,8 @@ app.use('*', express.static(path.join(__dirname, "client", "build")))
 // 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 // 	});
 // }
+
+
 
 //PROCESS ENV
 app.listen(port, process.env.IP, function(){
