@@ -57,16 +57,17 @@ const Settings = props => {
 				 onClick={onReset}
 				 >RESET AMOUNT
 			 </button>
-			 <button 
-				 onClick={onClickLogoutHandler}
-				 >SIGN OUT
-			</button>
+			 
 			 <button 
 				 type="submit"
 				 onClick={onClose}
 				 >CLOSE MENU
 			 </button>
 		  </form>
+			<button 
+				 onClick={onClickLogoutHandler}
+				 >SIGN OUT
+			</button>
 		</div>
 	)
 }
