@@ -57,7 +57,6 @@ const Settings = props => {
 				 >RESET AMOUNT
 			 </button>
 			 <button 
-				 type="submit"
 				 onClick={onClickLogoutHandler}
 				 >SIGN OUT
 			</button>
