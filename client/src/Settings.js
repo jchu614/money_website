@@ -1,9 +1,20 @@
 import React, {useState} from 'react';
+import { AuthContext } from './AuthorizeContext';
 import './Settings.css';
 
 const Settings = props => {
 	const [amount, setAmount] = useState({value: ""});
 	const [message, setMessage] = useState(null);
+	const {isAuthenticated, user, setIsAuthenticated, setUser} = useContext(AuthContext);
+	
+	const onClickLogoutHandler = () => {
+		Authorize.logout().then(data => {
+			if (data.success) {
+				setUser(data.user)
+				setIsAuthenticated(false);
+			}
+		});
+	}
 	
 	const onChange = e => {
 		setAmount({...amount, [e.target.name]: e.target.value})
@@ -44,6 +55,11 @@ const Settings = props => {
 				 onClick={onReset}
 				 >RESET AMOUNT
 			 </button>
+			 <button 
+				 type="submit"
+				 onClick={onClickLogoutHandler}
+				 >SIGN OUT
+			</button>
 			 <button 
 				 type="submit"
 				 onClick={onClose}
