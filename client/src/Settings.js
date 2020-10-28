@@ -13,6 +13,7 @@ const Settings = props => {
 			if (data.success) {
 				setUser(data.user)
 				setIsAuthenticated(false);
+				props.history.push('/login');
 			}
 		});
 	}
