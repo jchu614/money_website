@@ -47,8 +47,7 @@ const Settings = props => {
 				  inputMode="numeric" 
 				  placeholder="$XX.xx"
 				  />
-			 <button 
-				 className="menu-button"
+			 <button
 				 type="submit"
 				 onClick={onSubmit}
 				 >NEW TOTAL VALUE</button>
@@ -65,6 +64,7 @@ const Settings = props => {
 			 </button>
 		  </form>
 			<button 
+				 className="menu-button"
 				 onClick={onClickLogoutHandler}
 				 >SIGN OUT
 			</button>
