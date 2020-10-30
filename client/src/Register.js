@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Authorize from './Authorize';
+import {Link} from 'react-router-dom';
 import Message from './Message';
 import './Register.css'
 
@@ -58,6 +59,9 @@ const Register = props => {
 					type="submit">Register
 				</button>
 			</form>
+			<Link to ='/login'>
+				<button>Login</button>
+			</Link>
 			{message ? <Message message={message}/> : null}
 		</div>
 	)

@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react';
 import Authorize from './Authorize';
+import {Link} from 'react-router-dom';
 import Message from './Message';
 import {AuthContext} from './AuthorizeContext';
 import "./Login.css"
@@ -49,6 +50,9 @@ const Login = props => {
 					type="submit">Log In
 				</button>
 			</form>
+			<Link to ='/register'>
+				<button>Register</button>
+			</Link>
 			{message ? <Message message={message}/> : null}
 		</div>
 	)
