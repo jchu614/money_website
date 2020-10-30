@@ -51,7 +51,7 @@ const Login = props => {
 				</button>
 			</form>
 			<Link to ='/register'>
-				<button>Register</button>
+				<button>New User</button>
 			</Link>
 			{message ? <Message message={message}/> : null}
 		</div>

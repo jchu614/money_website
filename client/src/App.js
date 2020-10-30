@@ -15,7 +15,6 @@ function App() {
 	return (
 		<AuthProvider>
 			<Router>
-				<Navbar />
 				<Route path="/hidden" component={Message} />
 				<Route path="/loading" component={Loading} />
 				<Route path="/login" component={Login}/>

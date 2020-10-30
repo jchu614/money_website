@@ -60,7 +60,7 @@ const Register = props => {
 				</button>
 			</form>
 			<Link to ='/login'>
-				<button>Login</button>
+				<button>Return</button>
 			</Link>
 			{message ? <Message message={message}/> : null}
 		</div>
