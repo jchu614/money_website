@@ -2,7 +2,7 @@
 	background-image: url('./assets/bgimg.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 750px;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
